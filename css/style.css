@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --primary: #b6895b;
   --bg: #010101;
