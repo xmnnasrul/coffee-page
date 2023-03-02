@@ -32,6 +32,11 @@ body {
   top: 0;
   right: 0;
   z-index: 9999;
+
+  transition: transform 0.3s ease-in-out;
+}
+.hide-nav {
+  transform: translateY(-100%);
 }
 
 .navbar .navbar-logo {
@@ -272,6 +277,29 @@ footer .credit a {
   color: var(--bg);
   font-weight: 700;
 }
+
+/* Style animation */
+
+.float {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.float:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 10px);
+  -moz-transform: translate(0px, 10px);
+}
+.hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out;
+}
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(20px);
+  }
+}
+
 /* media Queries */
 
 /* laptop */
